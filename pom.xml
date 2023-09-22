@@ -84,6 +84,19 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<username>sivasuryamulesoft</username>
+						<password>Manam401$58</password>
+						<muleVersion>4.4.0</muleVersion>
+						<properties>
+							<http.port>8081</http.port>
+							<anypoint.platform.base_uri>https://anypoint.mulesoft.com</anypoint.platform.base_uri>
+							<anypoint.platform.analytics_base_uri>https://analytics-ingest.eu1.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
+						</properties>
+					</cloudHubDeployment>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
